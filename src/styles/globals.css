@@ -3,8 +3,7 @@
   padding: 0;
 }
 
-html,
-body {
+html {
   min-height: 100%;
   color: white;
 }
@@ -14,6 +13,11 @@ body {
   background-image: linear-gradient(-45deg, #04111e, #131856, #00032b);
   animation: bg 10s infinite alternate;
   background-color: #00032b;
+}
+
+body,
+#__next {
+  min-height: 100vh;
 }
 
 img {

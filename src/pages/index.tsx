@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./first.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -28,10 +29,12 @@ function First() {
           </p>
           <div>
             <p>Get Started</p>
-            <img
-              src="https://media.tenor.com/hNJdYeRXq3sAAAAi/pickle-rick.gif"
-              alt=""
-            />
+            <Link href="start">
+              <img
+                src="https://media.tenor.com/hNJdYeRXq3sAAAAi/pickle-rick.gif"
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </div>

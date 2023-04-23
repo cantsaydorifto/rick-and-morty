@@ -34,7 +34,7 @@
   font-size: 1.5rem;
 }
 
-.peace > div:nth-child(2) > div > img {
+.peace > div:nth-child(2) > div > a > img {
   height: 100px;
   width: 100px;
   outline: none;
@@ -43,7 +43,7 @@
   transition: all 0.5s;
 }
 
-.peace > div:nth-child(2) > div > img:hover {
+.peace > div:nth-child(2) > div > a > img:hover {
   transform: scale(1.1) translateY(10px) rotate(-10deg);
 }
 
