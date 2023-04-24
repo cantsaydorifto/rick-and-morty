@@ -1,0 +1,99 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 20px;
+  max-width: 1250px;
+  margin: 50px auto;
+}
+
+.characterCard {
+  margin: 0 auto;
+  width: 550px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #303b5b;
+  border-radius: 16px;
+}
+
+.characterCard > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.characterCard > div > div {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+
+.characterCard > div > div:nth-child(1) > span:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.characterCard > div > div:nth-child(2) > span:nth-child(1),
+.characterCard > div > div:nth-child(3) > span:nth-child(1) {
+  color: #9b9da0;
+}
+
+.characterCard > div > div:nth-child(1) > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.characterCard > img {
+  height: 100%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.Alive,
+.Dead,
+.unknown {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+.Dead {
+  background-color: red;
+}
+
+.unknown {
+  background-color: #9b9da0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 40px;
+  }
+  .characterCard {
+    box-sizing: border-box;
+    gap: 10px;
+    flex-direction: column;
+    height: fit-content;
+    padding: 0 10px 10px 10px;
+    width: 300px;
+  }
+  .characterCard > img {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .characterCard > div {
+    margin-left: 0;
+    width: 100%;
+  }
+}
